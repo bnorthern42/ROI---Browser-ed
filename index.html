@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+    <style>
+   table, th, td {
+     border: 1px solid black;
+     padding: 5px;
+   }
+   table {
+     border-spacing: 15px;
+   }
+   #wrap {
+ min-height: 100%;
+}
+
+body {
+ overflow:auto;
+ padding-bottom:75px; /* this needs to be bigger than footer height*/
+
+}
+.container{
+  border: 2px solid black;
+  padding: 1px;
+}
+
+</style>
+
+  </head>
+  <body>
+    <div class="container">
+      <h4>Future work</h4>
+        <nav class="navbar">
+          <h3 class="navbar-brand mr-auto">Dark Mode</h3>
+          <nav class= "navbar-nav">
+            <div class="nav-link">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch">Dark Switch</label>
+              </div>
+            </div>
+          </nav>
+        </nav>
+        <main>
+
+        </main>
+    </div>
+    <!-- INformation : heading, tutorial, etc... -->
+    <div>
+      <h1 class="display-1">ROI Calculator</h1>
+      <h6>dark mode comming soon</h6>
+    </div>
+
+
+    <!-- JQUERY Processing -->
+    <center>
+
+
+    <div>
+      <style>
+td {
+  color: black;
+   font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+}
+td:hover {
+  background: green;
+}
+</style>
+      <form>
+        <table>
+          <tr>
+            <td><b>Buy Price: </b>
+            <p> <input type="text" name="buyin" class="buyin" value="" maxlength="80"></p>
+            </td>
+
+            <td>  <button type="button" class="btn btn-info" id="calcsub">Submit</button></td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+    <div class="container">
+      <div id="here_table">
+
+          </div>
+    </div>
+
+
+      </center>
+
+
+
+  </body>
+</html>
